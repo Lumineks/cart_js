@@ -126,6 +126,7 @@
       }
 
       totalPrice += currentItem.price;
+      cartBtn.querySelector('span').innerText = cartItems.length;
       totalMsg.innerText = `Total: ${totalPrice}$`
       console.log(cartItems);
     });
@@ -156,7 +157,7 @@
     })
 
     cartItems.splice(indexInArray, 1);
-
+cartBtn.querySelector('span').innerText = cartItems.length;
     if (cartItems.length === 0) {
       emptyMsg.classList.remove('hidden');
       checkout.classList.remove('visible');
