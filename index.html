@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__image" src="images/logo.png" alt="Логотип Glee">
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item header__item--dropdown">
+                            <a class="header__link" href="#">
+                            Home
+                        </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                            About
+                        </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                            Services
+                        </a>
+                        </li>
+                        <li class="header__item header__item--dropdown">
+                            <a class="header__link" href="#">
+                            Pages
+                        </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                            News
+                        </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link" href="#">
+                            Contact
+                        </a>
+                        </li>
+                    </ul>
+                    <button class="header__burger"><span></span></button>
+                    <div class="header__box">
+                        <a class="header__btn header__btn--search icon icon--search" href="#"></a>
+                        <div class="header__buttons">
+                            <button class="header__btn header__btn--like icon icon--like">
+                            <span class="header__number">0</span>
+                        </button>
+                            <button class="header__btn header__btn--cart icon icon--cart">
+                            <span class="header__number">0</span>
+                        </button>
+                        </div>
+                        <div class="header__cart hidden">
+                            <div class="cart-top">
+                                <span>Your cart</span>
+                                <button class="cart-close" type="button">Close</button>
+                            </div>
+                            <p class="cart-empty">Your cart is empty</p>
+                            <div class="cart-list"></div>
+                            <div class="cart-bottom">
+                                <span class="cart-total"></span>
+                                <a class="cart-checkout" href="#">Checkout</a>
+                            </div>
+                        </div>
+                        <button class="header__btn header__btn--more icon icon--more"></button>
+                    </div>
+                    <button class="header__arrow"></button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="weekly-products">
+        <div class="container">
+            <h2 class="weekly-products__title title">
+                Products of the week
+            </h2>
+            <ul class="controls weekly-products__controls">
+                <li class="controls__control">
+                    <button class="controls__btn" data-filter="all" type="button">All</button>
+                </li>
+                <li class="controls__control">
+                    <button class="controls__btn" data-filter=".furnitures" type="button">Furnitures</button>
+                </li>
+                <li class="controls__control">
+                    <button class="controls__btn" data-filter=".chairs" type="button">Chairs</button>
+                </li>
+                <li class="controls__control">
+                    <button class="controls__btn" data-filter=".lighting" type="button">Lighting</button>
+                </li>
+                <li class="controls__control">
+                    <button class="controls__btn" data-filter=".decor" type="button">Decor</button>
+                </li>
+            </ul>
+            <ul class="weekly-products__list">
+                <li class="weekly-products__item mix furnitures">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="weekly-products__item mix furnitures">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="weekly-products__item mix furnitures">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="weekly-products__item mix lighting">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="weekly-products__item mix lighting">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="weekly-products__item mix chairs">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="weekly-products__item mix decor">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+                <li class="weekly-products__item mix decor">
+                    <article class="product-card">
+                        <img class="product-card__image" src="" alt="">
+                        <h3 class="product-card__title">
+                            <a class="product-card__link" href="#"></a>
+                        </h3>
+                        <span class="product-card__price"></span>
+                        <div class="product-card__actions">
+                            <a class="product-card__action icon icon--search" href="#">
+                              Search
+                          </a>
+                            <button class="product-card__action icon icon--cart">
+                              Add to cart
+                          </button>
+                            <a class="product-card__action icon icon--like" href="#">
+                              Add to favourites
+                          </a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </div>
+        <div class="container-fluid">
+            <ul class="weekly-products__trends">
+                <li class="weekly-products__trend">
+                    <img class="weekly-products__trend-image" src="images/trend-1.png" alt="">
+                    <h3 class="weekly-products__trend-title">
+                        <a class="weekly-products__trend-link" href="#">
+                          Mirum Notare Tellus
+                  </a>
+                    </h3>
+                    <div class="weekly-products__descr">
+                        <p class="weekly-products__text">
+                            LEDCornBulb Lamp 5W 7W 10W 12W 15W E26
+                        </p>
+                        <p class="weekly-products__text">
+                            E27LEDCornLight
+                        </p>
+                    </div>
+                    <a class="weekly-products__trend-btn decoration decoration--arrow" href="#">
+                  View more
+              </a>
+                </li>
+                <li class="weekly-products__trend">
+                    <img class="weekly-products__trend-image" src="images/trend-2.png" alt="">
+                    <h3 class="weekly-products__trend-title">
+                        <a class="weekly-products__trend-link" href="#">
+                          Malesuada Tempor Euismod
+                      </a>
+                    </h3>
+                    <div class="weekly-products__descr">
+                        <p class="weekly-products__text">
+                            50W 8000lm Compact Size for HID
+                        </p>
+                        <p class="weekly-products__text">
+                            StreetLightReplacementLEDCornLight
+                        </p>
+                    </div>
+                    <a class="weekly-products__trend-btn decoration decoration--arrow" href="#">
+                  View more
+              </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
